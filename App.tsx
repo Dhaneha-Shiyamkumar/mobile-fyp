@@ -9,10 +9,10 @@ import {
   Provider as PaperProvider,
 } from 'react-native-paper';
 import {NavigationContainer} from '@react-navigation/native';
-import ApplicationNavigationBar from './components/app-bar';
 import Toast from 'react-native-toast-message';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {ChildDeatils} from './screens/child-details';
+import {SetReminderScreen} from './screens/reminder';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +41,7 @@ function App(): JSX.Element {
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="Dashboard" component={DashboardScreen} />
             <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Reminder" component={SetReminderScreen} />
             <Stack.Screen name="Details" component={ChildDeatils} />
           </Stack.Navigator>
         </NavigationContainer>

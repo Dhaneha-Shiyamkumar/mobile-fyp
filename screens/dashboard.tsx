@@ -108,7 +108,10 @@ export const DashboardScreen = ({route, navigation}: any) => {
           actions={[
             {
               label: 'Learn more',
-              onPress: () => console.log('Learn more pressed'),
+              onPress: () =>
+                navigation.navigate('Reminder', {
+                  userId: userId,
+                }),
               textColor: '#FFFFFF',
               style: {
                 borderWidth: 0,
