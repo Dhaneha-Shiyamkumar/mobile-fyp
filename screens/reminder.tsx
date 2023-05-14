@@ -4,6 +4,10 @@ import {Appbar, Button, Text} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {StyleSheet, View} from 'react-native';
 
+// @TODO
+// implment this
+// https://www.notjust.dev/blog/2023-02-02-react-native-local-push-notifications
+
 export const SetReminderScreen = ({navigation}: any) => {
   return (
     <SafeAreaView style={styles.container}>
@@ -16,7 +20,7 @@ export const SetReminderScreen = ({navigation}: any) => {
           Set Reminder
         </Text>
 
-        <Text variant="bodyMedium" style={{marginTop: 10, color: '#A1A8B0'}}>
+        <Text variant="bodyMedium" style={{marginTop: 20, color: '#A1A8B0'}}>
           Set Reminder with date and time to get notified prior to the
           Vaccination date!
         </Text>
