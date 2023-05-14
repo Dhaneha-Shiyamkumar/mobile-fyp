@@ -1,8 +1,9 @@
 import 'react-native-gesture-handler';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {HomeScreen} from './screens';
 import {LoginScreen} from './screens/login';
+import {HomeScreen} from './screens/child-list';
+import {DashboardScreen} from './screens/dashboard';
 import {
   MD3LightTheme as DefaultTheme,
   Provider as PaperProvider,
@@ -35,9 +36,10 @@ function App(): JSX.Element {
           <Stack.Navigator
             initialRouteName="Login"
             screenOptions={{
-              header: props => <ApplicationNavigationBar {...props} />,
+              header: () => <></>,
             }}>
             <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Dashboard" component={DashboardScreen} />
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Details" component={ChildDeatils} />
           </Stack.Navigator>
