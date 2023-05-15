@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {AxiosResponse} from 'axios';
 import httpClient from './axios';
 import {AppConfig} from '../config';
-import Toast from 'react-native-toast-message';
 import {isArray} from 'lodash';
 import {ToastAndroid} from 'react-native';
 

@@ -13,6 +13,7 @@ import Toast from 'react-native-toast-message';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {ChildDeatils} from './screens/child-details';
 import {SetReminderScreen} from './screens/reminder';
+import {ProfileScreen} from './screens/profile-screen';
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,7 @@ function App(): JSX.Element {
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Reminder" component={SetReminderScreen} />
             <Stack.Screen name="Details" component={ChildDeatils} />
+            <Stack.Screen name="Profile" component={ProfileScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </QueryClientProvider>

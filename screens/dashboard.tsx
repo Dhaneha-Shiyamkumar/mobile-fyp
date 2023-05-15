@@ -78,7 +78,11 @@ export const DashboardScreen = ({route, navigation}: any) => {
           <IconButton
             icon="account-settings"
             size={30}
-            onPress={() => console.log('Pressed')}
+            onPress={() =>
+              navigation.navigate('Profile', {
+                userId: userId,
+              })
+            }
             style={{flex: 1}}
           />
         </View>
