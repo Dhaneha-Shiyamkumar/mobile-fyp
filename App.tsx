@@ -14,6 +14,7 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {ChildDeatils} from './screens/child-details';
 import {SetReminderScreen} from './screens/reminder';
 import {ProfileScreen} from './screens/profile-screen';
+import {VaccinationScreen} from './screens/vaccination';
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,7 @@ function App(): JSX.Element {
             <Stack.Screen name="Dashboard" component={DashboardScreen} />
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Reminder" component={SetReminderScreen} />
+            <Stack.Screen name="Vaccination" component={VaccinationScreen} />
             <Stack.Screen name="Details" component={ChildDeatils} />
             <Stack.Screen name="Profile" component={ProfileScreen} />
           </Stack.Navigator>

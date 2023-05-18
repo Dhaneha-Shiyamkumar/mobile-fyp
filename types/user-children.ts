@@ -11,6 +11,7 @@ export interface IChild {
 export interface Attributes {
   height: Height[];
   weight: Weight[];
+  vaccination: Vaccination[];
 }
 
 export interface Height {
@@ -21,4 +22,11 @@ export interface Height {
 export interface Weight {
   month: string;
   value: number;
+}
+
+export interface Vaccination {
+  month: string;
+  type: string;
+  date: string;
+  done: boolean;
 }

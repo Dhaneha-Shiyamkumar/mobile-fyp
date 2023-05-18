@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
-import {Appbar, Avatar, Card, Text, Title} from 'react-native-paper';
+import {Appbar, Avatar, Button, Card, Text, Title} from 'react-native-paper';
 import {Dimensions, ScrollView, StyleSheet, View} from 'react-native';
 import {IChild} from '../types/user-children';
 import {LineChart} from 'react-native-chart-kit';
@@ -41,6 +41,20 @@ export const ChildDeatils = ({route, navigation}: any) => {
               {`here you can find the Information about ${child.firstName}, the uptodate information added by the nurse `}
             </Text>
           </Card.Content>
+
+          <Card.Actions>
+            <Button
+              style={{
+                marginTop: 10,
+              }}
+              onPress={() =>
+                navigation.navigate('Vaccination', {
+                  child: child,
+                })
+              }>
+              Vaccination Information
+            </Button>
+          </Card.Actions>
         </Card>
 
         <Text
