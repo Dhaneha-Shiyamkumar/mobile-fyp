@@ -15,6 +15,7 @@ import {ChildDeatils} from './screens/child-details';
 import {SetReminderScreen} from './screens/reminder';
 import {ProfileScreen} from './screens/profile-screen';
 import {VaccinationScreen} from './screens/vaccination';
+import {UploadImageComponent} from './screens/image-to-text';
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +48,10 @@ function App(): JSX.Element {
             <Stack.Screen name="Vaccination" component={VaccinationScreen} />
             <Stack.Screen name="Details" component={ChildDeatils} />
             <Stack.Screen name="Profile" component={ProfileScreen} />
+            <Stack.Screen
+              name="UploadImageComponent"
+              component={UploadImageComponent}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </QueryClientProvider>

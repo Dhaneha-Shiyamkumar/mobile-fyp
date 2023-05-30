@@ -62,7 +62,11 @@ export const DashboardScreen = ({route, navigation}: any) => {
           <IconButton
             icon="medical-bag"
             size={30}
-            onPress={() => console.log('Pressed')}
+            onPress={() =>
+              navigation.navigate('UploadImageComponent', {
+                userId: userId,
+              })
+            }
             style={{flex: 1}}
           />
           <IconButton
